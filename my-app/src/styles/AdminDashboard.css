@@ -1,0 +1,81 @@
+/* Morning, Afternoon, Evening Backgrounds */
+.morning-bg {
+    background: url('https://img.freepik.com/premium-photo/morning-coffee-with-view_861748-8613.jpg') no-repeat center center;
+    background-size: cover;
+    animation: blurBackground 2s ease-in-out forwards, backgroundToBlue 2s ease-in-out 2s forwards;
+}
+
+.afternoon-bg {
+    background: url('https://i.pinimg.com/736x/e3/71/dd/e371dd678e19212ded2e9d0d659ceb00.jpg') no-repeat center center;
+    background-size: cover;
+    animation: blurBackground 2s ease-in-out forwards, backgroundToBlue 2s ease-in-out 2s forwards;
+}
+
+.evening-bg {
+    background: url('https://lifearchitekture.com/cdn/shop/articles/featured-large_0ec65801-0d7a-46d7-94c4-b82bcbfcb791-666192.jpg?v=1699727433') no-repeat center center;
+    background-size: cover;
+    animation: blurBackground 2s ease-in-out forwards, backgroundToBlue 2s ease-in-out 2s forwards;
+}
+
+/* Blurring Animation for Background Only */
+@keyframes blurBackground {
+    0% {
+        filter: blur(10px); /* Start with a blur effect on the background */
+    }
+    100% {
+        filter: blur(0px); /* End with no blur */
+    }
+}
+
+/* Transition to Blue Once the Blur Clears */
+@keyframes backgroundToBlue {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgba(0, 0, 255, 0.3); /* Soft blue */
+    }
+}
+
+/* Animation for Text */
+.morning-animate {
+    animation: textSlideIn 1s ease-in-out forwards;
+}
+
+.afternoon-animate {
+    animation: textSlideIn 1.5s ease-in-out forwards;
+}
+
+.evening-animate {
+    animation: textSlideIn 2s ease-in-out forwards;
+}
+
+@keyframes textSlideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Ensure text remains clear */
+.morning-bg, .afternoon-bg, .evening-bg {
+    position: relative;
+}
+
+.morning-bg::after,
+.afternoon-bg::after,
+.evening-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Apply blur only to the background */
+    z-index: -1; /* Make sure the blur does not affect the text */
+}

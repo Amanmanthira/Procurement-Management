@@ -1,0 +1,64 @@
+/* Modern form animations */
+.card-animation {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-animation:hover {
+    transform: scale(1.02);
+  }
+  
+  .heading-animation {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Input animations */
+  .input-animation {
+    transition: all 0.3s ease;
+  }
+  
+  .input-animation:focus {
+    border-color: #0a40ac;
+    box-shadow: 0 0 5px rgba(10, 64, 172, 0.5);
+  }
+  
+  /* Submit button hover animation */
+  .submit-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0a40ac;
+    transform: translateY(-3px);
+  }
+  
+  /* Spinner animation */
+  .spinner-border {
+    color: #0a40ac;
+  }
+  
+  /* Success/Failure message styles */
+  .alert {
+    transition: opacity 0.3s ease;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  

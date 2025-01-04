@@ -57,7 +57,7 @@ Welcome to the **Procurement Management System** for TechFix! This system is des
 - **Quotation Flow**: Quotations are initiated by admins and responded to by suppliers, ensuring efficient communication and documentation.
 - **Receipt Generation**: Both suppliers and admins can generate modern, downloadable receipts for their records.
 
-## 📦 Scrrenshots
+## 📦 Screenshots
 ![login](https://github.com/user-attachments/assets/5594df93-dc2e-4c11-a64a-1446c84f7140)
 
 ![Screenshot 2024-12-27 171814 - Copy](https://github.com/user-attachments/assets/d98db182-8aea-497b-8592-7c7cf906bc30)

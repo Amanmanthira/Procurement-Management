@@ -1,5 +1,5 @@
 # Procurement Management System for TechFix 
-## Developed with Mern Stack
+## Developed with Mern Stack (Mongodb , Express.js , React.js , Node.js)
 Welcome to the **Procurement Management System** for TechFix! This system is designed to streamline procurement processes, making it easy to manage suppliers, quotations, and users efficiently.
 
 ## 🚀 Features
